@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+    </header>
+
+    <main>
+        <form id="login-form">
+
+            <section>
+            <fieldset>
+            <label for="username">username</label><br>
+            <input type="text" id="username" name="username"><br>
+            </fieldset>
+            </section>
+
+            <section>
+            <fieldset>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            </fieldset>
+            </section>
+
+            <input type="submit" value="Login">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Musical Instruments Website</p>
+    </footer>
+    
+    <script>
+
+        document.getElementById("login-form").addEventListener("submit",function(event){
+            event.preventDefault();
+            var isLoggedIn = true;
+            if(isLoggedIn){
+                window.location.href="Musical instruments.html#instrument-selection";
+            }
+        });
+    </script>
+</body>
+</html>

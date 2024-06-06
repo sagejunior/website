@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up</h1>
+    </header>
+
+    <main>
+        <form id="signup-form">
+            <section>
+            <fieldset>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br>
+            </fieldset>
+            </section>
+
+            <section>
+            <fieldset>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            </fieldset>
+            </section>
+
+            <section>
+            <fieldset>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            </fieldset>
+            </section>
+
+            <section>
+            <fieldset>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            </fieldset>
+            </section>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Musical Instruments Website</p>
+    </footer>
+
+    <script>
+        document.getElementById("signup-form").addEventListener("submit",function(event){
+            event.preventDefault();
+            var isSignedUp=true;
+            if (isSignedUp){
+                window.location.href="Musical Instruments.html#instruments-selection"
+            }
+        }
+        )
+    </script>
+</body>
+</html>
